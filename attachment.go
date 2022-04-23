@@ -16,19 +16,19 @@ const (
 // Attachment Represents a file or media attachment that can be added to a status.
 // @doc https://docs.joinmastodon.org/entities/attachment/
 type Attachment struct {
-	// ID The ID of the attachment in the database.
+	// The ID of the attachment in the database.
 	ID string `json:"id"`
-	// Type  The type of the attachment.
+	//  The type of the attachment.
 	Type string `json:"type"`
-	// URL The location of the original full-size attachment.
+	// The location of the original full-size attachment.
 	URL string `json:"url"`
-	// PreviewURL The location of a scaled-down preview of the attachment.
+	// The location of a scaled-down preview of the attachment.
 	PreviewURL string `json:"preview_url"`
-	// RemoteURL The location of the full-size original attachment on the remote website.
+	// The location of the full-size original attachment on the remote website.
 	RemoteURL *string `json:"remote_url"`
-	// Meta Metadata returned by Paperclip.
+	// Metadata returned by Paperclip.
 	Meta any `json:"meta"`
-	// Description Alternate text that describes what is in the media attachment, to be used for the visually impaired or when media attachments do not load.
+	// Alternate text that describes what is in the media attachment, to be used for the visually impaired or when media attachments do not load.
 	Description *string `json:"description"`
 	// A hash computed by the BlurHash algorithm, for generating colorful preview thumbnails when media has not been downloaded yet.
 	BlurHash *string `json:"blurhash"`

@@ -5,13 +5,13 @@ import "strconv"
 // Activity Represents a weekly bucket of instance activity.
 // @doc https://docs.joinmastodon.org/entities/activity/
 type Activity struct {
-	// Week Midnight at the first day of the week.
+	// Midnight at the first day of the week.
 	Week string `json:"week"`
-	// Statuses created since the week began.
+	// created since the week began.
 	Statuses string `json:"statuses"`
-	// Logins User logins since the week began.
+	// User logins since the week began.
 	Logins string `json:"logins"`
-	// Registrations User registrations since the week began.
+	// User registrations since the week began.
 	Registrations string `json:"registrations"`
 }
 
