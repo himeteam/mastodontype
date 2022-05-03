@@ -27,6 +27,8 @@ type Poll struct {
 	Options []PollOption `json:"options"`
 	// Custom emoji to be used for rendering poll options.
 	Emojis []Emoji `json:"emojis"`
+	// Hide vote counts until the poll ends?
+	HideTotals bool `json:"hide_totals"`
 }
 
 // PollOption Possible answers for the poll.
